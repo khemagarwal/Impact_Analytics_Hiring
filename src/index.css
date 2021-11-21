@@ -483,7 +483,7 @@ a:link {
   display: block;
   width: 225px;
   padding: 15px 0;
-  background-color: #8f3985;
+  background-color: black;
   box-shadow: 0 5px 10px rgba(0,0,0,.1);
   color: #fff;
   font: 700 18px/1 'Lato', sans-serif;
@@ -516,3 +516,27 @@ a:link {
   transform: rotate(-45deg);
 }
 
+
+/* bottom right*/
+.ribbon-bottom-right {
+  bottom: -10px;
+  right: -10px;
+}
+.ribbon-bottom-right::before,
+.ribbon-bottom-right::after {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-bottom-right::before {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-bottom-right::after {
+  top: 0;
+  right: 0;
+}
+.ribbon-bottom-right span {
+  left: -25px;
+  bottom: 30px;
+  transform: rotate(-225deg);
+}

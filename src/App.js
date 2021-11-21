@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ApplicantDetails from './ApplicantDetails';
 import Shortlist from './Shortlist';
 import Reject from './Reject';
+import NotFound from './NotFound';
 
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
 
             <Route path="/rejected">
               <Reject />
+            </Route>
+            
+            <Route path="*">
+              <NotFound />
             </Route>
           </Switch>
         </div>

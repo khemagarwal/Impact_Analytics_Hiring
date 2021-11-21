@@ -56,6 +56,10 @@ const [filteredData, setFilteredData] = useState(data);
           value={wordEntered}
           onChange={handleFilter}
         />
+          {filteredData.length === 0 &&(
+            <br/>,
+          <p>No Such Data Found!!!</p>
+       )}
         {/* <div className="searchIcon">
           {filteredData.length === 0 ? (
             <SearchIcon />
@@ -94,6 +98,8 @@ const [filteredData, setFilteredData] = useState(data);
   {/* <div class="card__img"> */}
 
   <div class="ribbon ribbon-top-left"><span></span></div>
+  
+  <div class="ribbon ribbon-bottom-right"><span></span></div>
 
   {/* </div> */}
   
